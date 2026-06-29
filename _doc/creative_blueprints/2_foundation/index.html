@@ -1,0 +1,78 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-col { width: 50%; }
+  .mode-portrait .sl-col { width: 100%; }
+  .mode-landscape .sl-visual { width: 40%; }
+  .mode-portrait .sl-visual { display: none; }
+  .mode-landscape .sl-panels { width: 60%; }
+  .mode-portrait .sl-panels { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Problem + Solution panels -->
+    <div class="sl-panels flex flex-col justify-center gap-6 p-12">
+
+      <!-- Label -->
+      <p class="text-xs font-semibold tracking-widest uppercase mb-2" style="color: {{config.brandColor.primary}}; font-family: {{config.font.textFont}}, sans-serif;">
+        Why {{config.appName}}
+      </p>
+
+      <!-- Problem -->
+      <div class="rounded-2xl p-6" style="background: #FFF7ED; border-left: 4px solid {{config.brandColor.secondary}};">
+        <p class="text-xs font-bold uppercase tracking-wider mb-2" style="color: {{config.brandColor.secondary}}; font-family: {{config.font.textFont}}, sans-serif;">The Problem</p>
+        <h2 class="font-black text-xl mb-3" style="font-family: {{config.font.headingFont}}, sans-serif; color: #1E293B;">
+          Healthy eating is exhausting to plan manually.
+        </h2>
+        <ul class="space-y-2">
+          <li class="flex items-start gap-2 text-sm" style="color: #475569; font-family: {{config.font.textFont}}, sans-serif;">
+            <span class="mt-0.5 text-base">⏱</span> Hours spent searching for recipes that match dietary needs
+          </li>
+          <li class="flex items-start gap-2 text-sm" style="color: #475569; font-family: {{config.font.textFont}}, sans-serif;">
+            <span class="mt-0.5 text-base">🧮</span> Manual calorie and macro calculations every meal
+          </li>
+          <li class="flex items-start gap-2 text-sm" style="color: #475569; font-family: {{config.font.textFont}}, sans-serif;">
+            <span class="mt-0.5 text-base">🛒</span> Forgotten ingredients, wasted groceries, impulse bad choices
+          </li>
+          <li class="flex items-start gap-2 text-sm" style="color: #475569; font-family: {{config.font.textFont}}, sans-serif;">
+            <span class="mt-0.5 text-base">🎯</span> Generic advice that ignores personal goals, allergies, and budget
+          </li>
+        </ul>
+      </div>
+
+      <!-- Solution -->
+      <div class="rounded-2xl p-6" style="background: {{config.brandColor.accent}}; border-left: 4px solid {{config.brandColor.primary}};">
+        <p class="text-xs font-bold uppercase tracking-wider mb-2" style="color: {{config.brandColor.primary}}; font-family: {{config.font.textFont}}, sans-serif;">The Solution</p>
+        <h2 class="font-black text-xl mb-3" style="font-family: {{config.font.headingFont}}, sans-serif; color: #14532D;">
+          AI that builds your perfect meal plan in seconds.
+        </h2>
+        <ul class="space-y-2">
+          <li class="flex items-start gap-2 text-sm" style="color: #166534; font-family: {{config.font.textFont}}, sans-serif;">
+            <span class="mt-0.5 text-base">✅</span> Complete weekly plan from breakfast to snacks, instantly
+          </li>
+          <li class="flex items-start gap-2 text-sm" style="color: #166534; font-family: {{config.font.textFont}}, sans-serif;">
+            <span class="mt-0.5 text-base">✅</span> Every recommendation explains why it fits your goals
+          </li>
+          <li class="flex items-start gap-2 text-sm" style="color: #166534; font-family: {{config.font.textFont}}, sans-serif;">
+            <span class="mt-0.5 text-base">✅</span> Grocery list auto-generated and checked off while shopping
+          </li>
+          <li class="flex items-start gap-2 text-sm" style="color: #166534; font-family: {{config.font.textFont}}, sans-serif;">
+            <span class="mt-0.5 text-base">✅</span> 24/7 AI Nutrition Coach that learns and adapts over time
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Visual -->
+    <div class="sl-visual relative overflow-hidden" style="background: linear-gradient(160deg, #F0FDF4, #DCFCE7);">
+      <img
+        src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=Person%20happily%20meal%20prepping%20with%20colorful%20vegetables%20and%20phone%20showing%20nutrition%20app%2C%20modern%20kitchen%2C%20wellness%20lifestyle%2C%20clean%20aesthetic"
+        alt="Meal planning made easy"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+  </div>
+</section>
