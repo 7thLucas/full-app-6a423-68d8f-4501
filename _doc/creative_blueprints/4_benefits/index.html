@@ -1,0 +1,74 @@
+<style>
+  .mode-landscape .sl-metrics { grid-template-columns: repeat(3, 1fr); }
+  .mode-portrait .sl-metrics { grid-template-columns: repeat(2, 1fr); }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10">
+
+    <!-- Header -->
+    <div class="mb-6">
+      <span class="inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-3"
+        style="background-color: {{config.brandColor.accent}}; color: {{config.brandColor.accentForeground}}; font-family: {{config.font.textFont}}, sans-serif;">
+        Value Delivered
+      </span>
+      <h2 class="font-black text-3xl" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">
+        Measurable outcomes for <span style="color: {{config.brandColor.primary}};">real users.</span>
+      </h2>
+    </div>
+
+    <!-- Metric cards grid -->
+    <div class="sl-metrics grid gap-4 flex-1">
+
+      <div class="rounded-2xl p-5 flex flex-col justify-between" style="background: {{config.brandColor.primary}}; color: {{config.brandColor.primaryForeground}};">
+        <p class="text-xs font-semibold uppercase tracking-wider opacity-80" style="font-family: {{config.font.textFont}}, sans-serif;">Time Saved</p>
+        <div>
+          <p class="text-4xl font-black" style="font-family: {{config.font.headingFont}}, sans-serif;">5+ hrs</p>
+          <p class="text-xs mt-1 opacity-80" style="font-family: {{config.font.textFont}}, sans-serif;">per week vs. manual meal planning, recipe hunting, and grocery list creation</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col justify-between" style="background: {{config.brandColor.secondary}}; color: {{config.brandColor.secondaryForeground}};">
+        <p class="text-xs font-semibold uppercase tracking-wider opacity-80" style="font-family: {{config.font.textFont}}, sans-serif;">Goal Alignment</p>
+        <div>
+          <p class="text-4xl font-black" style="font-family: {{config.font.headingFont}}, sans-serif;">100%</p>
+          <p class="text-xs mt-1 opacity-80" style="font-family: {{config.font.textFont}}, sans-serif;">of meal recommendations tailored to the user's health goals, diet, and allergies</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col justify-between" style="background: #1E293B; color: #FFFFFF;">
+        <p class="text-xs font-semibold uppercase tracking-wider opacity-70" style="font-family: {{config.font.textFont}}, sans-serif;">Tools Replaced</p>
+        <div>
+          <p class="text-4xl font-black" style="font-family: {{config.font.headingFont}}, sans-serif;">5-in-1</p>
+          <p class="text-xs mt-1 opacity-70" style="font-family: {{config.font.textFont}}, sans-serif;">Nutritionist · Recipe app · Grocery planner · Habit tracker · Calorie counter</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col justify-between" style="background: {{config.brandColor.accent}}; border: 1px solid {{config.brandColor.sidebarBorder}};">
+        <p class="text-xs font-semibold uppercase tracking-wider" style="color: {{config.brandColor.primary}}; font-family: {{config.font.textFont}}, sans-serif;">Habit Retention</p>
+        <div>
+          <p class="text-4xl font-black" style="color: {{config.brandColor.primary}}; font-family: {{config.font.headingFont}}, sans-serif;">Streak</p>
+          <p class="text-xs mt-1" style="color: #166534; font-family: {{config.font.textFont}}, sans-serif;">Badges and streaks drive daily engagement and long-term healthy habits</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col justify-between" style="background: #EFF6FF; border: 1px solid #BFDBFE;">
+        <p class="text-xs font-semibold uppercase tracking-wider" style="color: #1E40AF; font-family: {{config.font.textFont}}, sans-serif;">AI Coach Access</p>
+        <div>
+          <p class="text-4xl font-black" style="color: #1E40AF; font-family: {{config.font.headingFont}}, sans-serif;">24 / 7</p>
+          <p class="text-xs mt-1" style="color: #1D4ED8; font-family: {{config.font.textFont}}, sans-serif;">Nutrition expertise on demand — no appointments, no cost per session</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl p-5 flex flex-col justify-between" style="background: #F8FAFC; border: 2px solid {{config.brandColor.primary}};">
+        <p class="text-xs font-semibold uppercase tracking-wider" style="color: {{config.brandColor.primary}}; font-family: {{config.font.textFont}}, sans-serif;">ROI Summary</p>
+        <div>
+          <p class="font-black text-lg leading-snug" style="color: {{config.brandColor.foreground}}; font-family: {{config.font.headingFont}}, sans-serif;">One app replaces a nutritionist + planner</p>
+          <p class="text-xs mt-2" style="color: #64748B; font-family: {{config.font.textFont}}, sans-serif;">Personalized guidance at a fraction of the cost — improving with every meal logged</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
