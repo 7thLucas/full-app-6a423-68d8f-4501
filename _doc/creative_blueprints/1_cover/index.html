@@ -1,0 +1,76 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-visual { width: 45%; height: 100%; }
+  .mode-portrait .sl-visual { width: 100%; height: 40%; }
+  .mode-landscape .sl-content { width: 55%; }
+  .mode-portrait .sl-content { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Content Column -->
+    <div class="sl-content flex flex-col justify-between p-12" style="background: #FFFFFF;">
+      <!-- Top label -->
+      <div>
+        <span class="inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-8"
+          style="background-color: {{config.brandColor.accent}}; color: {{config.brandColor.accentForeground}}; font-family: {{config.font.textFont}}, sans-serif;">
+          AI-Powered Nutrition
+        </span>
+
+        <!-- Headline -->
+        <h1 class="font-black leading-tight mb-4" style="font-family: {{config.font.headingFont}}, sans-serif; font-size: 3.4rem; color: {{config.brandColor.foreground}};">
+          Eat Smart.<br/>
+          <span style="color: {{config.brandColor.primary}};">Live Better.</span>
+        </h1>
+
+        <!-- Tagline -->
+        <p class="text-lg leading-relaxed mb-8" style="font-family: {{config.font.textFont}}, sans-serif; color: #475569; max-width: 400px;">
+          {{config.tagline}}
+        </p>
+
+        <!-- App name pill -->
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border" style="border-color: {{config.brandColor.border}}; background: {{config.brandColor.muted}};">
+          <span class="w-2 h-2 rounded-full" style="background-color: {{config.brandColor.primary}};"></span>
+          <span class="font-bold text-sm" style="font-family: {{config.font.headingFont}}, sans-serif; color: {{config.brandColor.foreground}};">{{config.appName}}</span>
+        </div>
+      </div>
+
+      <!-- Stat row -->
+      <div class="flex gap-8 mb-4">
+        <div>
+          <p class="text-2xl font-black" style="color: {{config.brandColor.primary}}; font-family: {{config.font.headingFont}}, sans-serif;">24/7</p>
+          <p class="text-xs" style="color: #64748B; font-family: {{config.font.textFont}}, sans-serif;">AI Coach Available</p>
+        </div>
+        <div>
+          <p class="text-2xl font-black" style="color: {{config.brandColor.secondary}}; font-family: {{config.font.headingFont}}, sans-serif;">7-Day</p>
+          <p class="text-xs" style="color: #64748B; font-family: {{config.font.textFont}}, sans-serif;">Personalized Plans</p>
+        </div>
+        <div>
+          <p class="text-2xl font-black" style="color: {{config.brandColor.primary}}; font-family: {{config.font.headingFont}}, sans-serif;">1-App</p>
+          <p class="text-xs" style="color: #64748B; font-family: {{config.font.textFont}}, sans-serif;">Replaces 5 Tools</p>
+        </div>
+      </div>
+
+      <!-- Attribution -->
+      <data-attribution />
+    </div>
+
+    <!-- Visual Column -->
+    <div class="sl-visual relative overflow-hidden" style="background: linear-gradient(145deg, {{config.brandColor.primary}}, #15803D);">
+      <img
+        src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=Beautiful%20healthy%20meal%20bowls%20with%20colorful%20vegetables%2C%20grains%2C%20and%20proteins%20arranged%20on%20a%20clean%20modern%20table%2C%20premium%20food%20photography%2C%20wellness%20aesthetic%2C%20vibrant%20colors"
+        alt="Healthy meals"
+        class="w-full h-full object-cover opacity-70"
+      />
+      <!-- Floating card overlay -->
+      <div class="absolute bottom-10 left-6 right-6 rounded-2xl p-4" style="background: rgba(255,255,255,0.15); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.25);">
+        <p class="text-xs font-semibold mb-1" style="color: rgba(255,255,255,0.8); font-family: {{config.font.textFont}}, sans-serif;">Today's AI Recommendation</p>
+        <p class="font-bold text-sm" style="color: #FFFFFF; font-family: {{config.font.headingFont}}, sans-serif;">Mediterranean Quinoa Bowl</p>
+        <p class="text-xs" style="color: rgba(255,255,255,0.7); font-family: {{config.font.textFont}}, sans-serif;">480 kcal · High Protein · ✓ Matches your goals</p>
+      </div>
+    </div>
+
+  </div>
+</section>
